@@ -166,16 +166,5 @@ public class TrainService {
 
         return trainsBetweenTime;
     }
-    public int convertTimeToInt(LocalTime time) {
-        int timeToReturn = 0;
-        if (!time.equals(null)) {
-            String timeStr = time.toString();
-            String[] timeStrArr = timeStr.split(":");
 
-            timeToReturn = Integer.parseInt(timeStrArr[0]) * 60 + Integer.parseInt(timeStrArr[1]);
-
-
-        }
-        return timeToReturn;
-    }
 }
